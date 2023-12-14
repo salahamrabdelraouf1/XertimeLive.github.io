@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="{{ site.url }}">Home</a>
+      <a href="{{ site.url }}/categories">Categories</a>
+    </nav>
+  </header>
+  {{ content }}
+  <footer>
+    <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}</p>
+  </footer>
+</body>
+</html>
